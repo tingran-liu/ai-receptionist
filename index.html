@@ -104,7 +104,9 @@ ul,ol{padding:0}
 .hero-card-inner.tilting{transition:transform .12s ease-out,box-shadow .2s ease}
 @media (prefers-reduced-motion:reduce){.hero-card-inner{transform:none!important;transition:none}}
 .hero-card-inner{width:100%;border-radius:16px;overflow:hidden;box-shadow:0 32px 80px rgba(0,0,0,0.15),0 8px 32px rgba(0,0,0,0.08)}
-.hero-card-inner img{width:100%;height:auto;border-radius:16px}
+.hero-card-inner img{display:block;width:100%;height:auto;border-radius:16px}
+#cover .hero-card-scene{width:150%;max-width:calc(100vw - var(--sidebar-w) - 64px);margin-left:50%;transform:translateX(-50%)}
+@media (max-width:1024px){#cover .hero-card-scene{max-width:calc(100vw - 48px)}}
 .scroll-indicator{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;text-decoration:none}
 .scroll-dot{width:6px;height:6px;background:var(--color-text-secondary);border-radius:50%;animation:scroll-bounce 2s ease-in-out infinite}
 @keyframes scroll-bounce{0%,100%{transform:translateY(0);opacity:0.8}50%{transform:translateY(8px);opacity:0.3}}
